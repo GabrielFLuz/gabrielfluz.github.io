@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Pedidos Pizza</title>
+    <style>
+        label {
+            display: inline-block;            
+            font-weight: bold;
+        }
+        label#form {
+            margin-right: 10px;
+            width: 200px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        #formulario {
+            margin-bottom: 10px;
+            margin-left: 20px;
+            padding: 5px;
+            width: 300px;
+        }
+        input[type="text"] {
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            border: 1px solid black;
+            padding: 5px;
+            width: 300px;
+        }
+        select {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+            padding: 5px;
+            width: 200px;
+            border-block-color: black;
+            border: 1px solid black;
+            font-display: block;
+            font-style: inherit;
+            font-stretch: expanded;
+            color: red;
+        }
+        a {
+            font-style: italic;            
+            margin-top: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        input[id="opção"] {
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="button"] {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Verde */
+            color: darkred;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastros</h1>
+    <form>
+        <div>
+            <label id="form">Nome </label><input type="text" id="formulario" name="Nome" value="" size="40" maxlength="150" /><br /><br />
+            <label id="form">Endereço </label><input type="text" id="formulario" name="Endereço" value="" size="40" maxlength="150" /><br /><br />
+            <label id="form">Telefone </label><input type="tel" id="formulario" name="telefone" size="20" /><br /><br />
+            <label id="form">Data/Hora do pedido</label><input type="datetime-local" id="formulario" name="datahora_pedido" /><br /><br />
+            <label id="form">Senha</label><input type="password" id="formulario" name="senha" size="20" maxlength="20" /><br /><br />
+        </div>
+        <hr />
+        <div>
+            <select name="tp_endereco" id="tp_endereco">
+                <option value="AC">Princeso</option>
+                <option value="AC">Romeu e Julieta</option>
+                <option value="AC">Inferniho</option>
+                <option value="AC">Condomíno de Prédio</option>
+            </select> <br /><br />
+        </div>
+        <div>
+            <input type="radio" id="opção" name="sabores" value="A" /><label>Bacon</label>
+            <input type="radio" id="opção" name="sabores" value="B" /><label>Cheddar</label>
+            <input type="radio" id="opção" name="sabores" value="C" /><label>Salada</label>
+            <input type="radio" id="opção" name="sabores" value="D" /><label>Strognoff</label>
+        </div>
+        <div>
+            <input type="checkbox" id="opção" name="sabores" value="A" /><label>Bacon</label>
+            <input type="checkbox" id="opção" name="sabores" value="B" /><label>Cheddar</label>
+            <input type="checkbox" id="opção" name="sabores" value="C" /><label>Salada</label>
+            <input type="checkbox" id="opção" name="sabores" value="D" /><label>Strognoff</label>
+        </div>
+        <div>
+            <input type="button" accept="" value="Enviar" onclick="alert('Pedido enviado com sucesso!')" />
+        </div>
+    </form>
+    <hr />
+    <a href="../aulas_pwr/roteiro06.html">Cardápio</a><br />
+    <a href="../../aulas_html/index.html">Menu</a>
+</body>
+</html>
